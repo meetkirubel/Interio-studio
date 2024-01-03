@@ -1,0 +1,101 @@
+/* ========================== Style For Footer  =================== */
+/* footer{
+    margin-top: 4rem;
+} */
+.footer-container .top{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+.footer-container .top .left{
+    width: 30%;
+}
+.footer-container .top h3{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+.footer-container .top .left .social{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-block: 1.5rem;
+}
+.footer-container .top .left .social .icon-container{
+    padding: .5rem;
+    background-color: var(--secondary-light);
+    border: 2px dotted transparent;
+    transition: var(--transition);
+} 
+.footer-container .top .left .social .icon-container:hover{
+    background-color: var(--white);
+    border: 2px dotted var(--secondary);
+} 
+.footer-container .top .left .social .icon-container .icon{
+    fill: var(--secondary);
+    font-size: 1rem;
+}
+.footer-container .top .left .p{
+    font-weight: 600;
+    font-size: .9rem;
+}
+.footer-container .top .right{
+    display: flex;
+    width: 60%;
+    height: 100%;
+    justify-content: space-between;
+}
+.footer-container .top .right .list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+    text-align: right;
+}
+
+.footer-container .top .right .list ul li{
+    font-size: .95rem;
+    font-weight: 500;
+    margin-block: .4rem;
+}
+.footer-container .top::after{
+    content: "";
+    position: absolute;
+    background-color: var(--black);
+    opacity: .2;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+.footer-container .bottom{
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    justify-content: space-between;
+    font-weight: 500;
+}
+.footer-container .bottom .left{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+}
+.footer-container .bottom .left::after{
+    content: "";
+    background-color: var(--black);
+    opacity: .2;
+    height: 80%;
+    width: 2px;
+    position: absolute;
+    left: 45%;
+    top: 0;
+}
+.footer-container .bottom .right{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+}

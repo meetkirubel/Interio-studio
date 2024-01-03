@@ -1,0 +1,68 @@
+/* ========================== Style For Header =================== */
+
+
+header{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    z-index: 10;
+    width: 100%;
+}
+header .heder-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    color: var(--white);
+}
+header .heder-container .logo{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+header .heder-container .logo span{
+    font-size: 2rem;
+    color:  var(--secondary);
+}
+header .heder-container nav ul{
+    display: flex;
+    gap: 3rem;
+    font-family: var(--fn);
+    font-size: .88rem;
+    font-weight: 600;
+}
+header .heder-container nav ul li a:hover{
+    color: var(--secondary);
+    text-decoration: underline;
+    transition: var(--transition);
+}
+header .heder-container .nav-icon{
+    display: flex;
+    align-items: end;
+    gap: .5rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+header .heder-container .nav-icon select{
+    background-color: transparent;
+}
+header .heder-container .nav-icon .cart{
+    position: relative;
+}
+header .heder-container .nav-icon .cart::after{
+    content: "0";
+    position: absolute;
+    background-color: var(--secondary);
+    text-align: center;
+    height: 1.3rem;
+    width: 1.3rem;
+    border-radius: 50%;
+    fill: var(--primary);
+    top: 50%;
+    left: 18%;
+    font-size: .88rem;
+}
+header .heder-container .nav-icon .cart .icon{
+    fill: var(--primary);
+    font-size: 2rem;
+}

@@ -1,0 +1,613 @@
+
+/* ========================== Style For Desctop =================== */
+.desktop{
+    display: block;
+}
+.mobile{
+    display: none;
+}
+
+
+
+
+
+
+/* ========================== Style For Other =================== */
+@media screen and (max-width:1000px){
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        height: 100vh;
+        flex-direction: column;
+    }
+    .mobile h1{
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--primary);
+    }
+    .mobile p{
+        font-size: 1rem;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================== Style For Hero =================== */
+
+
+.hero-container {
+    min-height: 100vh;
+    position: relative;
+    background-color: var(--light-yellow);
+    display: flex;
+    align-items: center;
+}
+
+.hero-container::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%,-50%);
+    width: 70%;
+    background-color: var(--primary);
+    min-height: 100%;
+}
+.hero-container .inner-container{
+    width: var(--inner-width);
+    margin-inline: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 5%;
+}
+.hero-container .inner-container .text{
+    width: 35%;
+}
+.hero-container .inner-container .text p{ 
+    color: var(--white);
+    font-weight: 400;
+    font-size: .88rem;
+    font-family: var(--fn);
+}
+.hero-container .inner-container .img{
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+/* ========================== Style For About =================== */
+
+
+
+
+.about-section{
+    background-color: var(--secondary-white);
+}
+
+.about-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.about-container .left{
+    display: flex;
+    min-height: 100%;
+    width: 50%;
+    gap: 1rem;
+    position: relative;
+}
+.about-container .left .img1,.about-container .left .img2{
+    width: 50%;
+}
+.about-container .left .testimonals{
+    position: absolute;
+    height: 50%;
+    width: 60%;
+    bottom: -5%;
+    right: 0%;
+    background-color: var(--white); 
+    box-shadow: var(--shadow);
+    display: grid;
+    place-content: center;
+    gap: 2rem;
+}
+
+.about-container .left .testimonals .text{
+    width: 80%;
+    margin-inline: auto;
+    font-weight: 500;
+    font-size: .8rem;
+    font-family: var(--fn);
+    position: relative;
+}
+.about-container .left .testimonals .text::after{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: -5%;
+    bottom: 0%;
+    background-color: var(--primary);
+}
+.about-container .left .testimonals .person{
+    width: 80%;
+    margin-inline: auto;
+    font-weight: 600;
+    font-size: .9rem;
+    font-family: var(--fn);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-container .left .testimonals .person-data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .6rem;
+}
+.about-container .left .testimonals .person-data .img{
+    width: 2.3rem;
+    border-radius: 50%;
+    object-fit: cover;
+    height: 2.3rem;
+}
+.about-container .left .testimonals .person .stars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .2rem;
+}
+.about-container .left .testimonals .person .stars .icon{
+    fill: rgb(233, 213, 0);
+    font-size: .8rem;
+}
+.about-container .right{
+    width: 50%;
+    height: 100%;
+    margin-right:  6%;
+}
+.about-container .right p{
+    font-size: .88rem;
+}
+.about-container .right .ceo{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-block: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================== Style For Project =================== */
+
+
+
+.project-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.project-container .left{
+    width: 30%;
+    height: 100%;
+    margin-left:6%;
+}
+.project-container .left p{
+    font-size: .88rem;
+}
+.project-container .left .ceo{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-block: 1rem;
+}
+
+.project-container .right{
+    width: 70%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+.project-container .right .projects{
+    display: flex;
+    grid-template-columns: repeat(1fr,3);
+}
+.project-container .right .projects .project{
+    width: 33.3%;
+    height: 50%;
+    position: relative;
+    transition: var(--transition);
+}
+.project-container .right .projects .project .text{
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    color: var(--white);
+}
+.project-container .right .projects .project .text h3{
+    font-size: 1.4rem;
+    font-weight: 700;
+    transition: var(--transition);
+}
+.project-container .right .projects .project .text p{
+    font-size: .88rem;
+    font-weight: 400;
+}
+.project-container .right .projects .project:hover .text h3{
+    bottom: 20%;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+/* ========================== Style For Work =================== */
+
+
+.work-process-section{
+    background-color: var(--secondary-white);
+}
+
+.work-process-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.work-process-container .left{
+    min-height: 100%;
+    width: 60%;
+}
+
+.work-process-container .right{
+    width: 50%;
+    height: 100%;
+    margin-right:  6%;
+}
+.work-process-container .right ol li{
+    margin-bottom: 1.5rem;
+}
+.work-process-container .right ol li .header{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+.work-process-container .right ol li .header span{
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--white);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: var(--primary);
+    box-shadow: var(--shadow);
+}
+.work-process-container .right ol li .header h3{
+    font-weight: 800;
+    font-size: 1.3rem;
+    color: var(--primary);
+}
+.work-process-container .right ol li p{
+    font-family: var(--fn);
+    font-size: .88rem;
+    width: 60%;
+    margin-left: 4.5rem;
+
+}
+
+
+
+
+
+
+
+/* ========================== Style For Prodacts =================== */
+
+
+
+.products-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+}
+.products-container .left{
+    width: 20%;
+    height: 100%;
+    margin-left:  6%;
+}
+.products-container .left .controler{
+    display: flex;
+    gap: 2rem;
+}
+.products-container  .left .controler .swiper-btn {
+    height: 3rem;
+    width: 3rem;
+    border: 2px solid var(--primary);
+    font-size: 2rem;
+    display: grid;
+    place-items: center;
+    transition: var(--transition);
+}
+.products-container .left .controler .swiper-btn:hover{
+    border: 2px dotted ;
+}
+.products-container .right {
+    width: 70%;
+}
+.products-container .right .cards{
+    width: 100%;
+}
+.products-container .right .cards .card {
+    width: 19rem;
+    height:  28rem;
+    position: relative;
+    background-color: rgba(10, 37, 24, 0.09);
+}
+.products-container .right .cards .card img{
+    width: 19rem;
+    height:  28rem;
+    mix-blend-mode: multiply;
+}
+.products-container .right .cards .card .text{
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    padding: 1rem;
+}
+.products-container .right .cards .card .text h3{
+    font-size: 1.4rem;
+    width: 100%;
+    font-weight: 700;
+    color: var(--white);
+    box-shadow: var(--shadow);
+}
+.products-container .right .cards .card .text p{
+    font-size: .8rem;
+    color: var(--white);
+    box-shadow: var(--shadow);
+}
+
+ 
+
+
+
+
+
+
+
+
+/* ========================== Style For How It Work =================== */
+
+
+
+.how-it-work-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.how-it-work-container .left{
+    width: 35%;
+    height: 100%;
+    margin-left:6%;
+}
+.how-it-work-container .left p{
+    font-size: .88rem;
+}
+
+.how-it-work-container .right{
+    width: 50%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* ========================== Style For Testimonal =================== */
+
+
+.testimonal-section{
+    min-height: 100vh;
+    background-color: var(--secondary-white);
+    display: grid;
+    place-items: center;
+}
+.testimonal-container .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.testimonal-container .top .controler{
+    display: flex;
+    gap: 2rem;
+}
+.testimonal-container .top .controler .swiper-btn {
+    height: 3rem;
+    width: 3rem;
+    border: 2px solid var(--primary);
+    font-size: 2rem;
+    display: grid;
+    place-items: center;
+    transition: var(--transition);
+}
+.testimonal-container .top .controler .swiper-btn:hover{
+    border: 2px dotted ;
+}
+.testimonal-container .bottom .testimonals .testimonal{
+    background-color: var(--white);
+    padding: 2rem 1rem;
+}
+.testimonal-container .bottom .testimonals .testimonal .text{
+    width: 80%;
+    margin-inline: auto;
+    font-weight: 500;
+    font-size: .8rem;
+    font-family: var(--fn);
+    position: relative;
+}
+.testimonal-container .bottom .testimonals .testimonal .text::after{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: -5%;
+    bottom: 0%;
+    background-color: var(--primary);
+}
+.testimonal-container .bottom .testimonals .testimonal .person{
+    width: 80%;
+    margin-inline: auto;
+    font-weight: 600;
+    font-size: .9rem;
+    font-family: var(--fn);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+.testimonal-container .bottom .testimonals .testimonal  .person{
+    width: 80%;
+    margin-inline: auto;
+    font-weight: 600;
+    font-size: .9rem;
+    font-family: var(--fn);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.testimonal-container .bottom .testimonals .testimonal  .person .person-data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .6rem;
+}
+.testimonal-container .bottom .testimonals .testimonal  .person .person-data .img{
+    width: 2.3rem;
+    border-radius: 50%;
+    object-fit: cover;
+    height: 2.3rem;
+}
+.testimonal-container .bottom .testimonals .testimonal  .person .stars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .2rem;
+}
+.testimonal-container .bottom .testimonals .testimonal  .person .stars .icon{
+    fill: rgb(233, 213, 0);
+    font-size: .8rem;
+}
+
+
+
+
+
+
+
+
+
+/* ========================== Style For Contact Us =================== */
+
+
+
+.contact-section {
+    background-color: var(--secondary-white);
+    display: flex;
+    align-items: center;
+}
+.contact-section .contact-container {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    background-color: var(--primary);
+    margin-block: 3rem;
+}
+.contact-container .img{
+   width: 40%;
+   height: 60vh;
+   position: relative;
+}
+.contact-container .img img{
+   height: 120%;
+   position: absolute;
+   top: -10%;
+   left: 0%;
+   object-fit: cover;
+}
+.contact-container .form{
+    width: 60%;
+    margin-right: 6%;
+}
+.contact-container .form p{
+    font-size: .88rem;
+    color: var(--white);
+}
+.contact-container .form h2{
+    color: var(--white);
+}
+.contact-container .form .input{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.contact-container .form .input input{
+    padding: 1rem 1rem;
+    height: 3.2rem;
+    width: 36%
+}
