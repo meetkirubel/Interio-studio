@@ -89,7 +89,7 @@ const Testimonal = () => {
                     </div>
                     <div className="person">
                       <div className="person-data">
-                        <Image src={item.img} alt="Sarah M." className="img" />
+                        <Image src={item.img} alt="Sarah M." className="img" placeholder="blur"/>
                         <p className="name">{item.name}</p>
                       </div>
 

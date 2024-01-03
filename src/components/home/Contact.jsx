@@ -6,7 +6,7 @@ const Contact = () => {
     <section className='contact-section'>
         <div className="contact-container">
             <div className="img">
-            <Image src={p1} alt="Office Design"/>          
+            <Image src={p1} alt="Office Design" placeholder="blur"/>          
             </div>
             <div className="form">
                 <p>PO BOX 4120. Portland, US.</p>

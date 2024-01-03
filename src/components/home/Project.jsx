@@ -16,21 +16,21 @@ const Project = () => {
         <div className="right">
                 <div className="projects">
                     <div className="project">
-                        <Image src={p1} alt="Office Design"/>
+                        <Image src={p1} alt="Office Design" placeholder="blur"/>
                         <div className="text">
                             <h3>Commercial</h3>
                             <p>180 project.</p>
                         </div>
                     </div>
                     <div className="project">
-                        <Image src={p2} alt="Office Design"/>
+                        <Image src={p2} alt="Office Design" placeholder="blur"/>
                         <div className="text">
                             <h3>Residential</h3>
                             <p>250 project.</p>
                         </div>
                     </div>
                     <div className="project">
-                        <Image src={p3} alt="Office Design"/>
+                        <Image src={p3} alt="Office Design" placeholder="blur"/>
                         <div className="text">
                             <h3>Ketchen</h3>
                             <p>140 project.</p>

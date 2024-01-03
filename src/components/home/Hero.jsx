@@ -19,7 +19,7 @@ export const Hero = () => {
             <Btn text="Explor More" />
           </div>
           <div className="img">
-            <Image src={hero} alt="Interio Hero" />
+            <Image src={hero} alt="Interio Hero"  placeholder="blur"/>
           </div>
         </div>
       </div>

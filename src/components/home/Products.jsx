@@ -58,7 +58,7 @@ const Products = () => {
             {data.map((item, key) => {
               return (
                 <SwiperSlide className="card" key={key}>
-                  <Image src={item.img} alt={item.name} />
+                  <Image src={item.img} alt={item.name}  placeholder="blur"/>
                   <div className="text">
                     <h3 className="name">{item.name}</h3>
                     <p className="price">{item.price}</p>

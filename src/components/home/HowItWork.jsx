@@ -13,7 +13,7 @@ const HowItWork = () => {
         </div>
         <div className="right">
                 <div className="projects">
-                        <Image src={p1} alt="Office Design"/>          
+                        <Image src={p1} alt="Office Design" placeholder="blur"/>          
                     </div>
                 </div>
         </div>
